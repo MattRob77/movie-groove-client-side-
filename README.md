@@ -1,1 +1,1 @@
-# Rails and JS Project 
+# Rails and JS Project
