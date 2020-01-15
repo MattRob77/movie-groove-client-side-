@@ -20,17 +20,17 @@ text-align: center;
 display: flex;
 flex-direction: column;
 justify-content: center;
-text-align: center;
+text-align: left-align;
 }
 
 .movie-card{
-    float:left;
-    width:393px;
-    height: 555px;
+
     background-color: white;
     color: #b2b2b2
     margin:15px;
     text-align: center;
+    padding: 150px;
+    border-style: inset;
 }
 .center-text {
     text-align: center;
