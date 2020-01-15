@@ -6,10 +6,11 @@ class Movie {
   this.genre = genre
   this.image = image
   this.stars = stars
+  this.image = image
   this.render()
   }
 
-  delete() {
+  delete(e) {
     const id = e.target.dataset.id
     fetch(`http://localhost:3000/movies/${id}`,{
       method: "DELETE",
@@ -25,14 +26,15 @@ class Movie {
   render() {
     const movieContainer = document.getElementById('movie-container')
     const movieCard = document.createElement('div')
+
     movieCard.classList.add('movie-card')
     movieCard.id = this.id
     movieCard.innerHTML = `
         <h2>${this.title}</h2>
-        <img src="${this.image}" />
+        <img src="" />
         <p>Description: ${this.description}</p>
         <p>Genre: ${this.genre}</p>
-        <p>Stars:</p>
+        <p>Stars: ${this.stars}</p>
         <button data-id="${this.id}" class="delete">Delete Movie?</button
       `
     movieContainer.appendChild(movieCard)
