@@ -1,6 +1,7 @@
 body {
 font-family:"Gotham SSm",Helvetica,Arial,sans-serif;
 font-weight: 300;
+background-color: gray;
 }
 
 h1{
@@ -25,7 +26,7 @@ text-align: left-align;
 }
 
 .movie-card{
-
+    font-style: oblique;
     background-color: white;
     color: #b2b2b2
     margin:15px;
