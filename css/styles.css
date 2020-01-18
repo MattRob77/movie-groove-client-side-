@@ -38,8 +38,17 @@ text-align: left-align;
     text-align: center;
 }
 
+.container {
+  text-align: right;
+}
 
+.button {
+  background: #D3D3D3;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
 
-*, *::after, *::before {
-  box-sizing: border-box;
+.button:hover {
+  background: #34495e;
+  color: #fff; 
 }
