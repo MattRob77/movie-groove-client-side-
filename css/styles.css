@@ -55,13 +55,13 @@ text-align: left-align;
 
 .review-popup {
   background: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
+  width: 30%;
+  height: 30%;
   position: absolute;
   top: 0;
   display: none;
-  justify-content: center;
-  alight-items: center;
+  justify-content: right;
+  alight-items: right;
 }
 
 .review-popup-content {
@@ -70,7 +70,7 @@ text-align: left-align;
   background: #ffff;
   padding: 20px;
   border-radius: 5px;
-  position: relative;
+  position: flex;
 }
 
 .close {

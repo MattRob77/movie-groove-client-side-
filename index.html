@@ -16,6 +16,11 @@
         </style>
   </head>
   <body>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <button type="submit" name ="submit">Upload</button> 
+
+    </form>
       <h1>Welcome to Movie Groove</h1>
       <div id="container">
       <div id="form">
@@ -52,7 +57,7 @@
       document.querySelector("review-popup").style.display = "flex";
     })
     document.querySelector(".close").addEventListener("click"), function() {
-        document.querySelector("review-popup").style.display = "none"; 
+        document.querySelector("review-popup").style.display = "none";
     }
     </script>
 
