@@ -37,3 +37,9 @@ text-align: left-align;
 .center-text {
     text-align: center;
 }
+
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
