@@ -35,11 +35,17 @@ class Movie {
         <p>Description: ${this.description}</p>
         <p>Genre: ${this.genre}</p>
         <p>Stars: ${this.stars}</p>
-        <button data-id="${this.id}" class="delete">Delete Movie?</button
+        <button data-id="${this.id}" class="delete">Delete Movie?</button>
+        <button data-id="${this.id}" class="create">Review Movie?</button>
+
+
       `
     movieContainer.appendChild(movieCard)
     movieCard.addEventListener('click', e => {
       if (e.target.className === 'delete') this.delete(e)
+      if (e.target.classname === 'create') {
+        this.create(e)
+      }
     })
   }
 }
