@@ -42,6 +42,20 @@
       </div>
       <div id="movie-container">
     </div>
+    <div class="review-popup">
+      <div class="review-popup-content"></div>
+      <img src"close.png" alt="Close" class="Close">
+    </div>
+
+    <script>
+    document.getElementById("button").addEventListener("click", function() {
+      document.querySelector("review-popup").style.display = "flex";
+    })
+    document.querySelector(".close").addEventListener("click"), function() {
+        document.querySelector("review-popup").style.display = "none"; 
+    }
+    </script>
+
     </body>
   <script type="text/javascript" src="src/review.js"></script>
   <script type="text/javascript" src="src/movie.js"></script>
