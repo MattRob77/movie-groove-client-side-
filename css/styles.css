@@ -1,8 +1,16 @@
 body {
-font-family:"Gotham SSm",Helvetica,Arial,sans-serif;
+font-family:"Raleway", sans-serif;
+font-height: 100%;
 font-weight: 300;
+background-img: url('img/ahmet-yalcinkaya-aNrRsB2wLDk-unsplash.jpg');
+background-position: center;
+background-size: cover;
 background-color: gray;
+background-repeat: no-repeat, repeat;
+
+
 }
+
 
 h1{
 display: flex;
