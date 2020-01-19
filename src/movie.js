@@ -36,7 +36,9 @@ class Movie {
         <p>Genre: ${this.genre}</p>
         <p>Stars: ${this.stars}</p>
         <button data-id="${this.id}" class="delete">Delete Movie?</button>
-        <button data-id="${this.id}" class="create">Review Movie?</button>
+        <div class="container">
+        <a href="#" class="button">Review Movie</a>
+        </div> 
 
 
       `
