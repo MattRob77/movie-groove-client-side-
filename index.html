@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Movie Groove</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?">"
         <style>
-        .checked {
-          color:orange;
-        }
+          body,h1,h5 {font-family: "Raleway", sans-serif}
+          body, html {height: 100%}
+          .bgimg {
+            background-image: url('/w3images/onepage_restaurant.jpg');
+            min-height: 100%;
+            background-position: center;
+            background-size: cover;
+          }
+      </style>
         </style>
   </head>
   <body>
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-      <input type="file" name="file">
-      <button type="submit" name ="submit">Upload</button>
-
     </form>
       <h1>Welcome to Movie Groove</h1>
       <div id="container">
@@ -34,12 +35,6 @@
           <input type="integer" name="Stars" placeholder="Stars" id="stars" />
           <br/>
           <input type="text" name="img" placeholder="img url" id="img"/>
-          <br/>
-          <h5> Star Rating </h5>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
           <br/>
           <input type="submit" value="Submit"/>
         </form>
