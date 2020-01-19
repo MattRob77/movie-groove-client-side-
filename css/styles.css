@@ -2,11 +2,10 @@ body {
 font-family:"Raleway", sans-serif;
 font-height: 100%;
 font-weight: 300;
-background-img: url('img/ahmet-yalcinkaya-aNrRsB2wLDk-unsplash.jpg');
-background-position: center;
+background-image: url("/img/peter-lewicki-Wfh650C1OHU-unsplash.jpg");
+background-attachment: fixed;
 background-size: cover;
-background-color: gray;
-background-repeat: no-repeat, repeat;
+background-color: none;
 
 
 }
@@ -18,12 +17,14 @@ flex-direction: column;
 justify-content: center;
 text-align: center;
 veritical-aline: baseline;
+color:white
 }
 
 #container {
     width:1279px;
     margin:auto;
     margin-top:50px;
+    color: white;
 }
 
 #form{
@@ -31,11 +32,13 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: left-align;
+color:white;
 }
 
 .movie-card{
+
     font-style: oblique;
-    background-color: white;
+    background-color: light;
     color: #b2b2b2
     margin:15px;
     text-align: center;
