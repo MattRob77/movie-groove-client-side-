@@ -31,14 +31,14 @@ class Movie {
     movieCard.id = this.id
     movieCard.innerHTML = `
         <h2>${this.title}</h2>
-          <img src/>
+        <img src="${this.image}"/>
         <p>Description: ${this.description}</p>
         <p>Genre: ${this.genre}</p>
         <p>Stars: ${this.stars}</p>
         <button data-id="${this.id}" class="delete">Delete Movie?</button>
         <div class="container">
         <a href="#" class="button">Review Movie</a>
-        </div> 
+        </div>
 
 
       `
