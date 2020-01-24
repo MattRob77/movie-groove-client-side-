@@ -9,6 +9,9 @@ class Movie {
   this.image = image
   this.render()
   }
+  //class function(Object-oriented programming) = objects that contain data
+  //this.(Object it belongs to)
+  //render is basically just a show page 
 
   delete(e) {
     const id = e.target.dataset.id
