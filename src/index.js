@@ -14,7 +14,7 @@ document.querySelector('form').addEventListener('submit', addMovie)
 //addEventListener method attaches an event handler to the specified element(waits for event)
 
 function addMovie(e) { //function(code that performs a task)
-  e.preventDefault() //stops the default action from happening
+ //stops the default action from happening
 const data = {
   'title': e.target.title.value, //targets the element
   'description': e.target.description.value,
@@ -31,6 +31,8 @@ const data = {
     body:JSON.stringify({data}) //data sent to server needs to be a string(stringify)
   }).then((movie) => {
     const {id, title, description, genre, image, stars} = movie
-    new Movie(id, title, description, genre, image, stars)
+    const newMovie=new Movie(id, title, description, genre, image, stars)
+
   })
-}
+
+  }
