@@ -29,5 +29,14 @@ const data = {
     const {id, title, description, genre, image, stars} = movie
     new Movie(id, title, description, genre, image, stars)
   })
-
 }
+
+
+function addReview(e) {
+  e.preventDefault()
+const data = {
+  'title': e.target.title.value,
+  'content': e.target.content.value,
+  'stars': e.target.stars.value,
+  }
+} 
