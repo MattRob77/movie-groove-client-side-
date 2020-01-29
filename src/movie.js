@@ -18,9 +18,9 @@ class Movie {
   delete(e) {
     const id = e.target.dataset.id
     fetch(`http://localhost:3000/movies/${id}`,{
-      method: "DELETE",
+      method: "DELETE", //For sending a method through we need another argument
       headers:{
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json' //Lets my applciation know what data was returned
       }
     }).then (()=>{
       e.target.parentElement.remove()
@@ -29,11 +29,12 @@ class Movie {
 
 
   render() {
-    const movieContainer = document.getElementById('movie-container')
-    const movieCard = document.createElement('div')
+    const movieContainer = document.getElementById('movie-container')//showing the data thats contained in movie-container
+    const movieCard = document.createElement('div') //creates new element "div"
 
     movieCard.classList.add('movie-card')
-    movieCard.id = this.id
+    movieCard.id = this.id //movieCard.id is the same as id that's assigned in the movie class
+    //Created Element
     movieCard.innerHTML = `
         <h2>${this.title}</h2>
         <img src="${this.image}"/>
@@ -45,14 +46,17 @@ class Movie {
         <a href="#" class="button">Review Movie</a>
         </div>
 
-
       `
     movieContainer.appendChild(movieCard)
-    movieCard.addEventListener('click', e => {
-      if (e.target.className === 'delete') this.delete(e)
+    movieCard.addEventListener('click', e => { //Waits for the event to get fired listens for it
+      if (e.target.className === 'delete') this.delete(e) //Added conditonal "==="for JS pass (e )
       if (e.target.classname === 'create') {
         this.create(e)
       }
     })
   }
 }
+
+//1.Selecting container
+//2.Creating a card to append to the container
+//3.Appending in Javascript is a way to insert content to the end of already existing elements
