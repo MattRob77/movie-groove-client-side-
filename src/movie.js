@@ -1,5 +1,7 @@
 class Movie {
   constructor(id, title, description, genre, image, stars){
+    //Method for creating and initializing an object in a class
+    //Properties
   this.id = id
   this.title = title
   this.description = description
@@ -11,7 +13,7 @@ class Movie {
   }
   //class function(Object-oriented programming) = objects that contain data
   //this.(Object it belongs to)
-  //render is basically just a show page 
+  //render is a show page
 
   delete(e) {
     const id = e.target.dataset.id

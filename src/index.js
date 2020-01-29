@@ -1,7 +1,7 @@
-fetch('http://localhost:3000/movies') //returns a promise that (fetches = grabs)
-.then(resp => resp.json()) //resp.json to see javascript data
+fetch('http://localhost:3000/movies') //returns a promise that (fetches = grabs my data from server)
+.then(resp => resp.json()) //Get objects and parse it to make it more processable
 .then(movies => {
-  movies.forEach(movie =>{ //provides a callback function()
+  movies.forEach(movie =>{ //provides a callback function()/Map in React
     const {id, title, description, genre, image, stars} = movie
     new Movie(id, title, description, genre, image, stars)
   })
