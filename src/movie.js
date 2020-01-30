@@ -22,8 +22,8 @@ class Movie {
       headers:{
         'Content-Type': 'application/json' //Lets my applciation know what data was returned
       }
-    }).then (()=>{
-      e.target.parentElement.remove()
+    }).then (()=>{ //passed an anonymous funtion without an identifier
+      e.target.parentElement.remove() //removes the "div" form the page
     })
   }
 
