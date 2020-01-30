@@ -29,8 +29,8 @@ const data = { //defined data
     },
     body:JSON.stringify({data}) //data sent to server needs to be a string, converts JS to JSON
   }).then((movie) => {
-    const {id, title, description, genre, image, stars} = movie
-    const newMovie=new Movie(id, title, description, genre, image, stars)
+    const {id, title, description, genre, image, stars} = movie //Set Constants
+    const newMovie=new Movie(id, title, description, genre, image, stars)//passing in all attributes
 
   })
 
